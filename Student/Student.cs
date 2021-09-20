@@ -31,7 +31,7 @@ namespace Student
 
         public override string ToString()
         {
-            return $"Student with id: {Id}, named {GivenName} {Surname} has status {Status}\nStart: {StartDate.ToString()}\nEnd: {EndDate.ToString()}\nGraduation: {GraduationDate.ToString()}";
+            return $"Student with id: {Id}, named {GivenName} {Surname} has status {Status}{Environment.NewLine}Start: {StartDate.ToString()}{Environment.NewLine}End: {EndDate.ToString()}{Environment.NewLine}Graduation: {GraduationDate.ToString()}";
         }
     }
 

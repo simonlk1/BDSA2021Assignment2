@@ -53,7 +53,7 @@ namespace Student.Tests
             student.GivenName = "Philip";
             student.Surname = "Stender";
 
-            var expected = "Student with id: 0, named Philip Stender has status Graduated\nStart: 01/01/0001 00.00.00\nEnd: 01/01/0001 00.00.00\nGraduation: 01/01/0001 00.00.00";
+            var expected = $"Student with id: 0, named Philip Stender has status Graduated{Environment.NewLine}Start: 01/01/0001 00.00.00{Environment.NewLine}End: 01/01/0001 00.00.00{Environment.NewLine}Graduation: 01/01/0001 00.00.00";
             var output = student.ToString();
 
             Assert.Equal(expected, output);
